@@ -1,0 +1,159 @@
+body {
+    overflow-x: hidden;
+}
+
+.navContainer {
+    position: fixed;
+    border-bottom: 1px solid black;
+    background-color: white;
+    left: 0;
+}
+
+.navContainer .nav-item .nav-link {
+    color: black;
+}
+
+.aboutMeAndSkillsContainer {
+    height: 100%;
+    background-image: url('./images/profile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.64);
+    background-blend-mode: lighten;
+    overflow: hidden;
+}
+
+/* Main Page Left Section CSS */
+
+.leftSection {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.leftSectionIconContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftSectionIconContainer .row {
+    margin: 1.2rem;
+}
+
+.leftSectionVerticalLineContainer {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.leftSectionVerticalLine {
+    border-left: 6px solid black;
+    height: 100px;
+}
+
+/* Main Page Center Section CSS */
+
+.centerSectionSalutation {
+    margin-top: 15%;
+}
+
+.centerSectionSalutation .t1,
+.centerSectionSalutation .t2 {
+    font-size: 2.5rem;
+}
+
+.centerSectionSalutation .t2 span {
+    font-size: 5rem;
+}
+
+.centerSectionInterest {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.centerSectionAboutMe {
+    margin-bottom: 1rem;
+}
+
+.centerSectionSkills {
+    margin-bottom: 1rem;
+}
+
+.centerSectionSkills div {
+    display: inline-block;
+}
+
+.centerSectionSkills .skillIcon {
+    margin-bottom: 0.5rem;
+}
+
+/* Main Page Right Section CSS */
+
+.rightSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.rightSectionEmail {
+    writing-mode: vertical-lr;
+    margin: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+.rightSectionVerticalLine {
+    border-left: 6px solid black;
+    height: 100px;
+}
+
+/* Expereince Page */
+
+.experienceContainer {
+    background-color: yellow;
+    height: 100%;
+}
+
+
+
+/* Project Page */
+
+.projectContainer {
+    margin-top: 2rem;
+    height: 100%;
+    background-image: url('./images/projects.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.64);
+    background-blend-mode: lighten;
+}
+
+.projectContainer .row {
+    display: flex;
+    justify-content: center;
+}
+
+.projectContainerItem .card {
+    margin: 1rem;
+    width: 20rem;
+}
+
+.projectContainerItem .card-body a {
+    margin: 0.25rem;
+}
+
+.projectContainerItem .card-img-top {
+    background-blend-mode: lighten;
+}
+
+/* Contact Me Page */
+
+.achievementsContainer {
+    background-color: green;
+    height: 100vh;
+}
