@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akshat Sood</title>
     <link href="styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="designs.scss">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -20,23 +19,21 @@
 <body>
 
     <!-- Navigation Bar -->
-    <div class="container-fluid navContainer">
-        <div class="row">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
-                </li>
-                <li>
-                    <button class="btn">Resume</button>
-                </li>
-            </ul>
-        </div>
+    <div class="container-fluid" id="navContainer">
+        <ul class="nav justify-content-center" id="navContainerList">
+            <li class="nav-item">
+                <a class="navbar-link" href="#">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="navbar-link" href="#">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="navbar-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+                <button id="resume-btn">Resume &nbsp;<i class="fa-solid fa-download"></i></button>
+            </li>
+        </ul>
     </div>
 
     <!-- About Me and Skills -->
@@ -44,10 +41,10 @@
         <div class="row">
             <div class="col-1 leftSection">
                 <div class="container leftSectionIconContainer">
-                    <div class="row"><i class="fa-brands fa-linkedin"></i></div>
-                    <div class="row"><i class="fa-brands fa-github"></i></div>
-                    <div class="row"><i class="fa-brands fa-square-twitter"></i></div>
-                    <div class="row"><i class="fa-solid fa-globe"></i></div>
+                    <div class="row"><a href=''><i class="fa-brands fa-linkedin"></i></a></div>
+                    <div class="row"><a href=''><i class="fa-brands fa-github"></i></a></div>
+                    <div class="row"><a href=''><i class="fa-brands fa-square-twitter"></i></a></div>
+                    <div class="row"><a href=''><i class="fa-solid fa-globe"></i></a></div>
                 </div>
                 <div class="container leftSectionVerticalLineContainer">
                     <div class="leftSectionVerticalLine"></div>
@@ -58,16 +55,13 @@
                     <div class="row">
                         <div class="col-1"></div>
                         <div class="col-10 centerSectionContainer">
-                            <div class="centerSectionSalutation">
-                                <div class="t1">Hey There </div>
-                                <div class="t2">I am <span>Akshat Sood</span></div>
-                            </div>
-                            <h3 class="typewriteContainer">
+                            <div class="centerSectionSalutation">Akshat Sood</div>
+                            <h4 class="typewriteContainer">
                                 <p class="typewrite" data-period="2000"
-                                    data-type='[ "Ardent Software Developer", "Competent in CPP and MERN Stack", "Transforming Ideas into Software Solutions" ]'>
+                                    data-type='[ "Ardent Software Developer", "Transforming Ideas into Software Solutions", "Fluent in CPP and MERN Stack" ]'>
                                     <span class="wrap"></span>
                                 </p>
-                            </h3>
+                            </h4>
                             <div class="centerSectionAboutMe">
                                 I assume the role of an Associate in the Engineering Development Group at MathWorks,
                                 where I spearhead projects aimed at constructing robust Simulink models while delivering
@@ -83,61 +77,61 @@
                                     <button class="btn"><img src="./images/languages/cpp.png"></button>
                                 </div>
                                 <div class="card skillIcon">
-                                    <button class="btn"><img src="./images/languages/cpp.png"></button>
+                                    <button class="btn"><img src="./images/languages/python.png"></button>
                                 </div>
                                 <div class="card skillIcon">
-                                    <button class="btn"><img src="./images/languages/cpp.png"></button>
+                                    <button class="btn"><img src="./images/languages/java.png"></button>
                                 </div>
                                 <div class="card skillIcon">
-                                    <button class="btn"><img src="./images/languages/cpp.png"></button>
+                                    <button class="btn"><img src="./images/languages/javascript.png"></button>
                                 </div>
                                 <div class="card skillIcon">
-                                    <button class="btn"><img src="./images/languages/cpp.png"></button>
+                                    <button class="btn"><img src="./images/languages/matlab.jpg"></button>
                                 </div>
                                 <div class="card skillIcon">
-                                    <button class="btn"><img src="./images/languages/cpp.png"></button>
+                                    <button class="btn"><img src="./images/languages/mongodb.png"></button>
                                 </div>
                                 <div class="card skillIcon">
-                                    <button class="btn"><img src="./images/languages/cpp.png"></button>
+                                    <button class="btn"><img src="./images/languages/express.png"></button>
                                 </div>
                                 <div class="card skillIcon">
-                                    <button class="btn"><img src="./images/languages/cpp.png"></button>
+                                    <button class="btn"><img src="./images/languages/react.png"></button>
                                 </div>
                                 <div class="card skillIcon">
-                                    <button class="btn"><img src="./images/languages/cpp.png"></button>
+                                    <button class="btn"><img src="./images/languages/nodejs.png"></button>
                                 </div>
                                 <div class="card skillIcon">
-                                    <button class="btn"><img src="./images/languages/cpp.png"></button>
+                                    <button class="btn"><img src="./images/languages/gatsbyjs.png"></button>
                                 </div>
                                 <div class="card skillIcon">
-                                    <button class="btn"><img src="./images/languages/cpp.png"></button>
+                                    <button class="btn"><img src="./images/languages/vuejs.png"></button>
                                 </div>
                                 <div class="card skillIcon">
-                                    <button class="btn"><img src="./images/languages/cpp.png"></button>
+                                    <button class="btn"><img src="./images/languages/mysql.png"></button>
                                 </div>
                                 <div class="card skillIcon">
-                                    <button class="btn"><img src="./images/languages/cpp.png"></button>
+                                    <button class="btn"><img src="./images/languages/django.png"></button>
                                 </div>
                                 <div class="card skillIcon">
-                                    <button class="btn"><img src="./images/languages/cpp.png"></button>
+                                    <button class="btn"><img src="./images/languages/git.png"></button>
                                 </div>
                                 <div class="card skillIcon">
-                                    <button class="btn"><img src="./images/languages/cpp.png"></button>
+                                    <button class="btn"><img src="./images/languages/pytorch.png"></button>
                                 </div>
                                 <div class="card skillIcon">
-                                    <button class="btn"><img src="./images/languages/cpp.png"></button>
+                                    <button class="btn"><img src="./images/languages/opencv.png"></button>
                                 </div>
                                 <div class="card skillIcon">
-                                    <button class="btn"><img src="./images/languages/cpp.png"></button>
+                                    <button class="btn"><img src="./images/languages/tensorflow.png"></button>
                                 </div>
                                 <div class="card skillIcon">
-                                    <button class="btn"><img src="./images/languages/cpp.png"></button>
+                                    <button class="btn"><img src="./images/languages/html.png"></button>
                                 </div>
                                 <div class="card skillIcon">
-                                    <button class="btn"><img src="./images/languages/cpp.png"></button>
+                                    <button class="btn"><img src="./images/languages/css.jpg"></button>
                                 </div>
                                 <div class="card skillIcon">
-                                    <button class="btn"><img src="./images/languages/cpp.png"></button>
+                                    <button class="btn"><img src="./images/languages/c-sharp.png"></button>
                                 </div>
                             </div>
                         </div>
@@ -160,39 +154,46 @@
                 <div class="sectionHeading">
                     <h1>Work Experience</h1>
                 </div>
-                <ul class="timeline container">
-                    <li class="timeline-event">
-                        <img class="timeline-event-icon" src="./images/mathworks.png"></img>
-                        <div class="timeline-event-copy">
-                            <p class="timeline-event-thumbnail">Jul 2023 - Present</p>
-                            <h3>MathWorks (Bangalore)</h3>
-                            <h4>Associate in Engineering Development Group</h4>
-                            <p>I assume an integral part in contributing to projects focused on crafting robust Simulink
-                                models tailored to match customer needs and driving product innovation within the
-                                organization. Utilizing the RFAIN framework, I embrace a methodical and comprehensive
-                                approach to project execution, from consolidating requirements and user goals to
-                                delivering changes to customers. This ensures timely delivery of deliverables while
-                                maintaining the utmost quality standards. Furthermore, this role affords me the
-                                opportunity to leverage a diverse skill set, including proficiency in JavaScript and
-                                Modern C++, alongside expertise in Simulink and Agile methodologies.</p>
-                        </div>
-                    </li>
-                    <li class="timeline-event">
-                        <img class="timeline-event-icon" src="./images/mathworks.png"></img>
-                        <div class="timeline-event-copy">
-                            <p class="timeline-event-thumbnail">May 2022 - Jul 2022</p>
-                            <h3>MathWorks (Bangalore)</h3>
-                            <h4>Intern in Engineering Development Group</h4>
-                            <p>I collaborated with a team of developers across worldwide locations in refactoring more
-                                than 60 components, resulting in a remarkable reduction of 50% in their individual build
-                                times. This strategic refactoring initiative significantly enhanced the efficiency and
-                                agility of the development workflow. As part of this endeavor, I also took the
-                                initiative to design and implement a BASH script tailored to automate the entire
-                                process, with a keen focus on minimizing manual intervention and streamlining the
-                                overall procedure.</p>
-                        </div>
-                    </li>
-                </ul>
+                <div class="container-fluid">
+                    <ul class="timeline container">
+                        <li class="timeline-event">
+                            <img class="timeline-event-icon" src="./images/mathworks.png"></img>
+                            <div class="timeline-event-copy">
+                                <p class="timeline-event-thumbnail">Jul 2023 - Present</p>
+                                <h3>MathWorks (Bangalore)</h3>
+                                <h4>Associate in Engineering Development Group</h4>
+                                <p>I assume an integral part in contributing to projects focused on crafting robust
+                                    Simulink
+                                    models tailored to match customer needs and driving product innovation within the
+                                    organization. Utilizing the RFAIN framework, I embrace a methodical and
+                                    comprehensive
+                                    approach to project execution, from consolidating requirements and user goals to
+                                    delivering changes to customers. This ensures timely delivery of deliverables while
+                                    maintaining the utmost quality standards. Furthermore, this role affords me the
+                                    opportunity to leverage a diverse skill set, including proficiency in JavaScript and
+                                    Modern C++, alongside expertise in Simulink and Agile methodologies.</p>
+                            </div>
+                        </li>
+                        <li class="timeline-event">
+                            <img class="timeline-event-icon" src="./images/mathworks.png"></img>
+                            <div class="timeline-event-copy">
+                                <p class="timeline-event-thumbnail">May 2022 - Jul 2022</p>
+                                <h3>MathWorks (Bangalore)</h3>
+                                <h4>Intern in Engineering Development Group</h4>
+                                <p>I collaborated with developers across the globe in refactoring
+                                    more
+                                    than 60 components, resulting in a remarkable reduction of 50% in their individual
+                                    build
+                                    times. This strategic refactoring initiative significantly enhanced the efficiency
+                                    and
+                                    agility of the development workflow. As part of this endeavor, I also took the
+                                    initiative to design and implement a BASH script tailored to automate the entire
+                                    process, with a keen focus on minimizing manual intervention and streamlining the
+                                    overall procedure.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="col-1"></div>
         </div>
@@ -212,81 +213,47 @@
                     <div class="col-1"></div>
                 </div>
             </div>
-            <div class="col-auto projectContainerItem">
-                <div class="card">
-                    <img class="card-img-top" src="./images/project-item.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">TBD</a>
-                        <a href="#" class="btn btn-primary">TBD</a>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-auto projectContainerItem">
+                        <div class="card">
+                            <img class="card-img-top" src="./images/project-item.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Into the Wild</h5>
+                                <p class="card-text"></p>
+                                <a href="#" class="btn btn-primary">Code</a>
+                                <a href="#" class="btn btn-primary">Live Demo</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-auto projectContainerItem">
-                <div class="card">
-                    <img class=" card-img-top" src="./images/project-item.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">TBD</a>
-                        <a href="#" class="btn btn-primary">TBD</a>
+                    <div class="col-auto projectContainerItem">
+                        <div class="card">
+                            <img class=" card-img-top" src="./images/project-item.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Ryus Conquest</h5>
+                                <p class="card-text"></p>
+                                <a href="#" class="btn btn-primary">Code</a>
+                                <a href="#" class="btn btn-primary">Live Demo</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-auto projectContainerItem">
-                <div class="card">
-                    <img class="card-img-top" src="./images/project-item.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">TBD</a>
-                        <a href="#" class="btn btn-primary">TBD</a>
+                    <div class="col-auto projectContainerItem">
+                        <div class="card">
+                            <img class="card-img-top" src="./images/project-item.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Avishkaar</h5>
+                                <p class="card-text"></p>
+                                <a href="#" class="btn btn-primary">Code</a>
+                                <a href="#" class="btn btn-primary">Live Demo</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-auto projectContainerItem">
-                <div class="card">
-                    <img class="card-img-top" src="./images/project-item.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">TBD</a>
-                        <a href="#" class="btn btn-primary">TBD</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-auto projectContainerItem">
-                <div class="card">
-                    <img class="card-img-top" src="./images/project-item.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">TBD</a>
-                        <a href="#" class="btn btn-primary">TBD</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-auto projectContainerItem">
-                <div class="card">
-                    <img class="card-img-top" src="./images/project-item.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">TBD</a>
-                        <a href="#" class="btn btn-primary">TBD</a>
-                    </div>
+                    <div class="col-1"></div>
                 </div>
             </div>
         </div>
     </div>
-
     <script src="./main.js"></script>
 </body>
 
