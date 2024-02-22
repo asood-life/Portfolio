@@ -1,5 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700);
+
 body {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1em;
     overflow-x: hidden;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* 
+ The website does not support screens with widths below 1200px due to ongoing responsive design enhancements. I am actively working on these improvements and plan to deploy them soon.
+*/
+
+@media screen and (max-width:1200px) {
+
+    #portfolio-website {
+        display: none;
+    }
+
+    body {
+        background-image: url("images/work-in-progress.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 #navContainer {
@@ -71,13 +95,9 @@ body {
 
 /* About Me and Skills section */
 
-.aboutMeAndSkillsContainer {
+.about-me-container {
     height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgba(255, 255, 255, 0.64);
-    background-blend-mode: lighten;
-    overflow: hidden;
+    text-align: center;
 }
 
 /* Main Page Left Section CSS */
@@ -88,7 +108,7 @@ body {
     bottom: 0;
 }
 
-.leftSectionIconContainer {
+.left-section-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,37 +116,37 @@ body {
     z-index: 1;
 }
 
-.leftSectionIconContainer .row {
+.left-section-container .row {
     margin: 1.2rem;
 }
 
-.leftSectionIconContainer .row a {
+.left-section-container .row a {
     color: black;
 }
 
-.leftSectionIconContainer .row i {
+.left-section-container .row i {
     font-size: 150%;
 }
 
-.leftSectionIconContainer .row i:hover {
+.left-section-container .row i:hover {
     transform: scale(1.5);
-    transition: 1s ease;
+    transition: 0.6s ease;
 }
 
-.leftSectionVerticalLineContainer {
+.left-section-vertical-line-container {
     padding-top: 2rem;
     display: flex;
     justify-content: center;
 }
 
-.leftSectionVerticalLine {
+.left-section-vertical-line {
     border-left: 6px solid black;
     height: 100px;
 }
 
 /* Main Page Center Section CSS */
 
-.centerSectionSalutation {
+.center-section-name {
     font-size: 5.6rem;
     margin-top: 10%;
 }
@@ -136,51 +156,53 @@ body {
     margin-bottom: 1rem;
 }
 
-.typewriteContainer {
+.typewrite-container {
     margin: 1.1rem auto;
 }
 
-.typewriteContainer a {
+.typewrite-container a {
     list-style: none;
 }
 
 .typewrite {
     font-size: 1.4rem;
+    margin-bottom: 2rem;
 }
 
-.centerSectionAboutMe {
-    margin-bottom: 1.5rem;
+.center-section-text {
+    text-align: left;
+    margin-bottom: 2.2rem;
     font-size: 1rem;
 }
 
-.centerSectionSkills {
+.center-section-skills {
     margin-bottom: 1rem;
     text-align: center;
 }
 
-.centerSectionSkills div {
+.center-section-skills div {
     display: inline-block;
 }
 
-.centerSectionSkills .skillIcon {
+.center-section-skills .skill-icon {
     margin-bottom: 1rem;
     margin-right: 0.5rem;
 }
 
-.centerSectionSkills .skillIcon img {
+.center-section-skills .skill-icon img {
     margin-bottom: 0.5rem;
     width: 3.3rem;
     filter: grayscale(100%);
 }
 
-.centerSectionSkills .skillIcon img:hover {
+.center-section-skills .skill-icon img:hover {
     filter: grayscale(0%);
     transition: 0.6s ease;
 }
 
 /* Main Page Right Section CSS */
 
-.rightSection {
+.right-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -190,34 +212,23 @@ body {
     top: 0;
 }
 
-.rightSectionEmail {
+.right-section-mail {
     writing-mode: vertical-lr;
     margin: 1rem;
     letter-spacing: 0.2rem;
 }
 
-.rightSectionVerticalLine {
+.right-section-vertical-line {
     border-left: 6px solid black;
     height: 150px;
 }
 
 /* Expereince Page */
 
-.experienceContainer {
+.experience-container {
     height: 100%;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700);
-
-body {
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 1em;
-    font-weight: 300;
-    line-height: 1.5;
-    letter-spacing: 0.05em;
-}
-
-/* Styling */
 .timeline {
     margin: 2rem auto;
     list-style-type: none;
@@ -289,7 +300,12 @@ body {
     padding: 0.25em 1em 0.2em 1em;
 }
 
-.sectionHeading h1 {
+.timeline-event-copy .skill-badge {
+    border: 1px solid black;
+    color: black;
+}
+
+.section-heading h1 {
     text-align: center;
     text-transform: uppercase;
     font-size: 26px;
@@ -303,8 +319,8 @@ body {
     font-size: 1.6rem;
 }
 
-.sectionHeading h1:after,
-.sectionHeading h1:before {
+.section-heading h1:after,
+.section-heading h1:before {
     content: " ";
     display: block;
     border-bottom: 2px solid #ccc;
@@ -313,7 +329,7 @@ body {
 
 /* Project Page */
 
-.projectContainer {
+.project-container {
     margin-top: 2rem;
     height: 100%;
     background-repeat: no-repeat;
@@ -323,43 +339,48 @@ body {
     text-align: center;
 }
 
-.projectContainer h1 {
+.project-container h1 {
     margin-top: 1rem;
 }
 
-.projectContainer .row {
+.project-container .row {
     display: flex;
     justify-content: center;
 }
 
-.projectContainerItem .card {
+.project-container-item .card {
     margin: 1rem;
     width: 18rem;
 }
 
-.projectContainerItem .card-body a {
+.project-container-item .card-body a {
     margin: 0.25rem;
     border: 1px solid white;
 }
 
-.projectContainerItem .card-body a:hover {
+.project-container-item .card-body a:hover {
     background-color: white;
     color: black;
     border: 1px solid black
 }
 
-.projectContainerItem .card-img-top {
+.project-container-item .card-img-top {
     filter: grayscale(100%);
     width: 18rem;
 }
 
-.projectContainerItem .card-title {
-    font-size: 1.5rem;
+.project-container-item .card-title {
+    font-size: 1.2rem;
 }
 
-.projectContainerItem a {
+.card .card-body .project-badge {
+    color: black;
+    border: 1px solid black;
+}
+
+.project-container-item a {
     background-color: black;
     border: 1px solid white;
     width: 7.2rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
