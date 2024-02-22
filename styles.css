@@ -39,7 +39,8 @@ body {
     padding: 10px 10px;
     margin: 0 10px;
     animation: slideIn 0.5s ease forwards;
-    margin: 0.5rem 0.25rem;
+    margin: 0.5rem 0.5rem;
+    font-size: 1rem;
 }
 
 .navbar-link:before {
@@ -64,7 +65,8 @@ body {
     border: 1px solid black;
     padding: 0.5rem;
     background-color: white;
-    margin-left: 0.5vw;
+    margin-left: 0.5rem;
+    font-size: 1rem;
 }
 
 /* About Me and Skills section */
@@ -95,7 +97,7 @@ body {
 }
 
 .leftSectionIconContainer .row {
-    margin: 1.2vw;
+    margin: 1.2rem;
 }
 
 .leftSectionIconContainer .row a {
@@ -125,17 +127,17 @@ body {
 /* Main Page Center Section CSS */
 
 .centerSectionSalutation {
-    font-size: 8vw;
+    font-size: 5.6rem;
     margin-top: 10%;
 }
 
 .centerSectionInterest {
     font-size: 2rem;
-    margin-bottom: 1vw;
+    margin-bottom: 1rem;
 }
 
 .typewriteContainer {
-    margin: 1.1vw auto;
+    margin: 1.1rem auto;
 }
 
 .typewriteContainer a {
@@ -143,16 +145,16 @@ body {
 }
 
 .typewrite {
-    font-size: 2vw;
+    font-size: 1.4rem;
 }
 
 .centerSectionAboutMe {
-    margin-bottom: 1.5vw;
-    font-size: 1.2vw;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
 }
 
 .centerSectionSkills {
-    margin-bottom: 1vw;
+    margin-bottom: 1rem;
     text-align: center;
 }
 
@@ -161,13 +163,13 @@ body {
 }
 
 .centerSectionSkills .skillIcon {
-    margin-bottom: 1vw;
-    margin-right: 0.5vw;
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
 }
 
 .centerSectionSkills .skillIcon img {
-    margin-bottom: 0.5vw;
-    width: 4vw;
+    margin-bottom: 0.5rem;
+    width: 3.3rem;
     filter: grayscale(100%);
 }
 
@@ -190,7 +192,7 @@ body {
 
 .rightSectionEmail {
     writing-mode: vertical-lr;
-    margin: 1vw;
+    margin: 1rem;
     letter-spacing: 0.2rem;
 }
 
@@ -205,11 +207,8 @@ body {
     height: 100%;
 }
 
-@import "compass/css3";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700);
 
-/* Variables */
-/* Fonts */
 body {
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 1em;
@@ -220,7 +219,7 @@ body {
 
 /* Styling */
 .timeline {
-    margin: 2vw auto;
+    margin: 2rem auto;
     list-style-type: none;
     position: relative;
 }
@@ -244,17 +243,17 @@ body {
     padding: 2em;
     position: relative;
     top: -1.875em;
-    left: 4vw;
+    left: 4rem;
     width: 100%;
 }
 
 .timeline-event-copy h3 {
-    font-size: 2vw;
+    font-size: 1.6rem;
 }
 
 .timeline-event-copy h4 {
-    font-size: 1.5vw;
-    margin-bottom: 1.2vw;
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
 }
 
 .timeline-event-copy strong {
@@ -262,18 +261,18 @@ body {
 }
 
 .timeline-event-copy p:not(.timeline-event-thumbnail) {
-    padding-bottom: 1.2em;
-    font-size: 1.2vw;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
 }
 
 .timeline-event-icon {
     display: block;
     margin: 0.5em 0.5em 0.5em -0.5em;
     position: absolute;
-    width: 6.4vw;
+    width: 5.6rem;
     top: 0em;
     filter: grayscale(100%);
-    left: 0.5em;
+    left: 0.2em;
 }
 
 .timeline-event-icon:hover {
@@ -283,10 +282,10 @@ body {
 
 .timeline-event-thumbnail {
     color: white;
-    font-size: 0.85vw;
+    font-size: 0.72rem;
     background-color: black;
     display: inline-block;
-    margin-bottom: 1.2vw;
+    margin-bottom: 0.6rem;
     padding: 0.25em 1em 0.2em 1em;
 }
 
@@ -299,9 +298,9 @@ body {
     grid-template-columns: 1fr auto 1fr;
     grid-template-rows: 16px 0;
     grid-gap: 22px;
-    margin-top: 5vw;
-    margin-bottom: 2vw;
-    font-size: 2.4vw;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
 }
 
 .sectionHeading h1:after,
@@ -315,16 +314,17 @@ body {
 /* Project Page */
 
 .projectContainer {
-    margin-top: 2vw;
+    margin-top: 2rem;
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(255, 255, 255, 0.64);
     background-blend-mode: lighten;
+    text-align: center;
 }
 
 .projectContainer h1 {
-    margin-top: 1vw;
+    margin-top: 1rem;
 }
 
 .projectContainer .row {
@@ -333,7 +333,7 @@ body {
 }
 
 .projectContainerItem .card {
-    margin: 1vw;
+    margin: 1rem;
     width: 18rem;
 }
 
@@ -354,12 +354,12 @@ body {
 }
 
 .projectContainerItem .card-title {
-    font-size: 1.5vw;
+    font-size: 1.5rem;
 }
 
 .projectContainerItem a {
     background-color: black;
     border: 1px solid white;
     width: 7.2rem;
-    font-size: 1vw;
+    font-size: 1rem;
 }
