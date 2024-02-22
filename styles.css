@@ -9,6 +9,10 @@ body {
     line-height: 1.5;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 /* 
  The website does not support screens with widths below 1200px due to ongoing responsive design enhancements. I am actively working on these improvements and plan to deploy them soon.
 */
@@ -26,15 +30,49 @@ body {
     }
 }
 
-#navContainer {
+@keyframes fade-in-effect {
+
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fade-up-effect {
+
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes display-effect {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#nav-container {
     position: fixed;
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
     background-color: white;
     left: 0;
+    animation: fade-in-effect 1s ease;
     z-index: 1;
 }
 
-#navContainerList {
+#nav-container-list {
     display: flex;
     align-items: center;
 }
@@ -43,7 +81,7 @@ body {
     color: black;
 }
 
-@keyframes slideIn {
+@keyframes slide-in {
     from {
         opacity: 0;
         transform: translateY(-20px);
@@ -62,7 +100,7 @@ body {
     display: inline-block;
     padding: 10px 10px;
     margin: 0 10px;
-    animation: slideIn 0.5s ease forwards;
+    animation: slide-in 0.5s ease forwards;
     margin: 0.5rem 0.5rem;
     font-size: 1rem;
 }
@@ -102,9 +140,10 @@ body {
 
 /* Main Page Left Section CSS */
 
-.leftSection {
+.left-section {
     position: fixed;
     left: 0;
+    animation: fade-up-effect 2s ease-out;
     bottom: 0;
 }
 
@@ -146,14 +185,13 @@ body {
 
 /* Main Page Center Section CSS */
 
+.center-section-container {
+    animation: display-effect 3s ease-in;
+}
+
 .center-section-name {
     font-size: 5.6rem;
     margin-top: 10%;
-}
-
-.centerSectionInterest {
-    font-size: 2rem;
-    margin-bottom: 1rem;
 }
 
 .typewrite-container {
@@ -170,7 +208,7 @@ body {
 }
 
 .center-section-text {
-    text-align: left;
+    text-align: center;
     margin-bottom: 2.2rem;
     font-size: 1rem;
 }
@@ -208,6 +246,7 @@ body {
     align-items: center;
     justify-content: center;
     position: fixed;
+    animation: fade-in-effect 2s ease-in-out;
     right: 0;
     top: 0;
 }
