@@ -1,3 +1,16 @@
+window.addEventListener('scroll', function () {
+    var windowHeight = window.innerHeight * 1.2;
+    var scrollPosition = window.scrollY;
+    var threshold = windowHeight;
+
+    if (scrollPosition > threshold) {
+        document.querySelector('.website-background').style.display = 'block';
+    } else {
+        document.querySelector('.website-background').style.display = 'none';
+    }
+});
+
+
 var textType = function (obj, toRotate, period) {
     this.toRotate = toRotate;
     this.obj = obj;
