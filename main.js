@@ -8,8 +8,31 @@ window.addEventListener('scroll', function () {
     } else {
         document.querySelector('.website-background').style.display = 'none';
     }
+
+    var screenWidth = window.innerWidth;
+    var threshold = 1200;
+
+    if (screenWidth < threshold) {
+        window.location.href = 'https://linktr.ee/akshatsood.life';
+    }
 });
 
+window.addEventListener('DOMContentLoaded', function () {
+
+    var screenWidth = window.innerWidth;
+    var threshold = 1040;
+
+    if (screenWidth < threshold) {
+        window.location.href = 'https://linktr.ee/akshatsood.life';
+    } else {
+        // window.location.href = 'https://asood-life.github.io/Portfolio';
+    }
+});
+
+let resumeBtn = document.getElementById('resume-btn');
+resumeBtn.addEventListener('click', () => {
+    resumeBtn.
+})
 
 var textType = function (obj, toRotate, period) {
     this.toRotate = toRotate;

@@ -13,23 +13,6 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-/* 
- The website does not support screens with widths below 1200px due to ongoing responsive design enhancements. I am actively working on these improvements and plan to deploy them soon.
-*/
-
-@media screen and (max-width:1200px) {
-
-    #portfolio-website {
-        display: none;
-    }
-
-    body {
-        background-image: url("images/work-in-progress.gif");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-}
-
 @keyframes fade-in-effect {
 
     0% {
@@ -129,6 +112,12 @@ body::-webkit-scrollbar {
     background-color: white;
     margin-left: 0.5rem;
     font-size: 1rem;
+}
+
+#resume-btn:hover {
+    background-color: black;
+    color: white;
+    transition: 0.6s ease;
 }
 
 /* About Me and Skills section */
