@@ -56,8 +56,16 @@ body::-webkit-scrollbar {
     }
 
     100% {
-        opacity: 0.05;
+        opacity: 0.08;
     }
+}
+
+#website-background {
+    position: fixed;
+    bottom: 0;
+    animation: display-effect-bg 1.2s ease-in;
+    opacity: 0.05;
+    z-index: -1;
 }
 
 #nav-container {
@@ -295,12 +303,6 @@ body::-webkit-scrollbar {
 }
 
 /* Expereince Page */
-
-.website-background {
-    position: fixed;
-    bottom: 0;
-    animation: display-effect-bg 1.6s ease forwards;
-}
 
 .experience-container {
     height: 100%;
