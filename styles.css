@@ -1,4 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700');
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Roboto:wght@100;300;400&display=swap');
 
 body {
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -7,6 +9,7 @@ body {
     letter-spacing: 0.05em;
     font-weight: 300;
     line-height: 1.5;
+    animation: display-effect 1.2s ease-in;
 }
 
 body::-webkit-scrollbar {
@@ -43,6 +46,17 @@ body::-webkit-scrollbar {
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes display-effect-bg {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.05;
     }
 }
 
@@ -162,7 +176,7 @@ body::-webkit-scrollbar {
     top: 0;
     right: 0;
     width: 100%;
-    opacity: 0.08;
+    opacity: 0.06;
 }
 
 .left-section-container {
@@ -203,12 +217,13 @@ body::-webkit-scrollbar {
 
 /* Main Page Center Section CSS */
 
-.center-section-container {
+/* .center-section-container {
     animation: display-effect 3s ease-in;
-}
+} */
 
 .center-section-name {
-    font-size: 5.6rem;
+    font-size: 6.2rem;
+    font-family: "Caveat", cursive;
     margin-top: 10%;
 }
 
@@ -221,7 +236,7 @@ body::-webkit-scrollbar {
 }
 
 .typewrite {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
@@ -252,7 +267,7 @@ body::-webkit-scrollbar {
 
 .center-section-skills .skill-icon img:hover {
     filter: grayscale(0%);
-    transition: 0.6s ease;
+    transition: 0.4s ease;
 }
 
 /* Main Page Right Section CSS */
@@ -283,8 +298,8 @@ body::-webkit-scrollbar {
 
 .website-background {
     position: fixed;
-    opacity: 0.05;
     bottom: 0;
+    animation: display-effect-bg 1.6s ease forwards;
 }
 
 .experience-container {
@@ -431,6 +446,10 @@ body::-webkit-scrollbar {
 .project-container-item .card-img-top {
     filter: grayscale(100%);
     width: 18rem;
+}
+
+.project-container-item .card-img-top:hover {
+    filter: grayscale(0%);
 }
 
 .project-container-item .card-title {

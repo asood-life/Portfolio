@@ -1,20 +1,13 @@
 window.addEventListener('scroll', function () {
     var windowHeight = window.innerHeight * 1.2;
     var scrollPosition = window.scrollY;
-    var threshold = windowHeight;
+    var threshold = windowHeight * 0.8;
 
-    if (scrollPosition > threshold) {
-        document.querySelector('.website-background').style.display = 'block';
-    } else {
-        document.querySelector('.website-background').style.display = 'none';
-    }
-
-    var screenWidth = window.innerWidth;
-    var threshold = 1200;
-
-    if (screenWidth < threshold) {
-        window.location.href = 'https://linktr.ee/akshatsood.life';
-    }
+    // if (scrollPosition > threshold) {
+    //     document.querySelector('.website-background').style.display = 'block';
+    // } else {
+    //     document.querySelector('.website-background').style.display = 'none';
+    // }
 });
 
 window.addEventListener('DOMContentLoaded', function () {
@@ -25,14 +18,9 @@ window.addEventListener('DOMContentLoaded', function () {
     if (screenWidth < threshold) {
         window.location.href = 'https://linktr.ee/akshatsood.life';
     } else {
-        // window.location.href = 'https://asood-life.github.io/Portfolio';
+        window.location.href = 'https://asood-life.github.io/Portfolio';
     }
 });
-
-let resumeBtn = document.getElementById('resume-btn');
-resumeBtn.addEventListener('click', () => {
-    resumeBtn.
-})
 
 var textType = function (obj, toRotate, period) {
     this.toRotate = toRotate;
