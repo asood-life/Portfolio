@@ -17,9 +17,10 @@ window.addEventListener('DOMContentLoaded', function () {
 
     if (screenWidth < threshold) {
         window.location.href = 'https://linktr.ee/akshatsood.life';
-    } else {
-        window.location.href = 'https://asood-life.github.io/Portfolio';
-    }
+    } 
+    // else {
+    //     window.location.href = 'https://asood-life.github.io/Portfolio';
+    // }
 });
 
 var textType = function (obj, toRotate, period) {
