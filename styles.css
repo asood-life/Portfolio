@@ -446,10 +446,12 @@ body::-webkit-scrollbar {
 .project-container-item .card-img-top {
     filter: grayscale(100%);
     width: 18rem;
+    height: 10rem;
 }
 
 .project-container-item .card-img-top:hover {
     filter: grayscale(0%);
+    transition: 1s ease;
 }
 
 .project-container-item .card-title {
